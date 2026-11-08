@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="CookiesApplication/CookiesApplication.csproj" Id="621d68ad-72d0-4191-92f9-fea7194a3455" />
   <Project Path="HelloApp/HelloApp.csproj" />
+  <Project Path="HelloAppSecond/HelloAppSecond.csproj" Id="a2e8a11b-203a-41dc-bd53-da22ad697a4d" />
 </Solution>

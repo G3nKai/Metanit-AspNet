@@ -1,6 +1,12 @@
-var builder = WebApplication.CreateBuilder(args);
-var app = builder.Build();
+WebApplicationBuilder build = WebApplication.CreateBuilder(args);
 
-app.MapGet("/", () => "Hello World!");
+WebApplication app = build.Build();
+
+app.Map("/user", ([AsParameters] Person person) =>
+{
+    return $"Name: {person.name} and Age: {person.age}";
+});
 
 app.Run();
+
+record class Person(string name, int age);
